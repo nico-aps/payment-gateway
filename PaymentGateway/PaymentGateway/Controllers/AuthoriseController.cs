@@ -17,13 +17,11 @@ namespace PaymentGateway.Controllers
     [ApiController]
     public class AuthoriseController : ControllerBase
     {
-        private readonly PaymentGatewayContext _context;
         private readonly IAuthRequestAdapter _adapter;
         private readonly ILogger<AuthoriseController> _logger;
 
-        public AuthoriseController(PaymentGatewayContext context, IAuthRequestAdapter adapter, ILogger<AuthoriseController> logger)
+        public AuthoriseController(IAuthRequestAdapter adapter, ILogger<AuthoriseController> logger)
         {
-            _context = context;
             _adapter = adapter;
             _logger = logger;
         }
