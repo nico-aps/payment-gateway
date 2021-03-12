@@ -27,7 +27,7 @@ namespace PaymentGateway
         {
             services.AddDbContext<PaymentGatewayContext>(opt =>
                opt.UseInMemoryDatabase("PaymentGateway"));
-            services.AddControllers();
+            services.AddControllers().AddNewtonsoftJson();
             services.AddMvc().AddFluentValidation();
 
             services.AddTransient<IAuthRequestAdapter, AuthRequestAdapter>();

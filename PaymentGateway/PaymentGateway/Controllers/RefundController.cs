@@ -46,7 +46,7 @@ namespace PaymentGateway.Controllers
                     AuthorisedAmount = transaction.Amount,
                     AmountCaptured = transaction.AmountCaptured,
                     AmountRefunded = transaction.AmountRefunded,
-                    Currency = request.Currency
+                    Currency = request.Currency.ToString()
                 });
             }
             catch (ArgumentOutOfRangeException ae)

@@ -38,7 +38,7 @@ namespace PaymentGateway.Controllers
                     AuthorisedAmount = transaction.Amount,
                     AmountCaptured = transaction.AmountCaptured,
                     AmountRefunded = transaction.AmountRefunded,
-                    Currency = transaction.Currency
+                    Currency = transaction.Currency.ToString()
                 });
             }
             catch (Exception e)

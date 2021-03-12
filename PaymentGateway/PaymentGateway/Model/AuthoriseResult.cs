@@ -9,6 +9,6 @@ namespace PaymentGateway.Model
         public Guid Id { get; set; }
         public HttpStatusCode StatusCode { get; set; }
         public double Amount { get; set; }
-        public Currency Currency { get; set; }
+        public string Currency { get; set; }
     }
 }

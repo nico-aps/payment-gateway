@@ -46,7 +46,7 @@ namespace PaymentGateway.Controllers
                     StatusCode = HttpStatusCode.OK,
                     AuthorisedAmount = transaction.Amount,
                     AmountCaptured = transaction.AmountCaptured,
-                    Currency = request.Currency
+                    Currency = request.Currency.ToString()
                 });
             }
             catch (ArgumentOutOfRangeException ae)

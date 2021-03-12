@@ -25,7 +25,7 @@ namespace PaymentGateway.Model.Mappers
         {
             Id = request.Id,
             Amount = request.Amount,
-            Currency = request.Currency,
+            Currency = request.Currency.ToString(),
             StatusCode = statusCode
         };
     }

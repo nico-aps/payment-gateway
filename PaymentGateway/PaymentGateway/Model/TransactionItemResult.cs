@@ -8,7 +8,7 @@ namespace PaymentGateway.Model
         public double AuthorisedAmount { get; set; }
         public double AmountCaptured { get; set; }
         public double AmountRefunded { get; set; }
-        public Currency Currency { get; set; }
+        public string Currency { get; set; }
         public HttpStatusCode StatusCode { get; set; }
         public string ErrorMessage { get; set; }
     }
